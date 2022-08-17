@@ -165,6 +165,7 @@ You can set D4D to automatically open every time you log in to your computer. Si
 - [ ] Multiple instances of the widget to allow monitoring of various people
 - [ ] Implement suggestions & fix any bugs
 - [ ] Change Electron icon to Dexcom icon on Mac
+- [ ] Build binaries
 - [ ] Glass UI
 
 See the [open issues](https://github.com/MatthewBlam/Dexcom-4-Desktop/issues) for a full list of proposed features (and known issues).
