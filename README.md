@@ -50,7 +50,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![D4D Screen Shot][product-screenshot]](https://github.com/github_username/repo_name)
+[![D4D Screen Shot][product-screenshot]](https://github.com/MatthewBlam/Dexcom-4-Desktop)
 
 This project started mainly due to the fact that admittedly, I _may_ ignore my phone just a bit when working on the computer. It serves as a small widget overlay  on the screen, and looks exactly like the Dexcom G6 app to keep a consistent and familiar style. Read below for instructions on how to set it up for yourself!
 
