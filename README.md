@@ -80,25 +80,25 @@ To get this project running locally, there are a few things you need to do...
 ### Setup
 
 1. Make sure Python and Node.js are installed
-   ```
+   ```shell
    python -V  # may need to use 'python3' keyword
    npm -V
    ```
 2. Download or clone the repo, then save the folder in an easy place
-   ```
+   ```shell
    git clone https://github.com/MatthewBlam/Dexcom-4-Desktop.git
    ```
 3. Install the necessary Python packages
-   ```
+   ```shell
    pip install eel pydexcom  # May need to use 'pip3' keyword
    ```
 4. Install the necessary Node.js packages
-   ```
+   ```python
    cd path\to\project-folder  # Needs to be installed in the project folder
    npm install electron  # Should create folder called 'node_modules'
    ```
 5. Finally, run `windows_setup.py` or `mac_setup.py` to create the shortcut launcher `Dexcom 4 Desktop` in your project folder
-   ```
+   ```shell
    python windows_setup.py
    # or
    python mac_setup.py
