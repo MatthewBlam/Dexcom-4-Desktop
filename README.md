@@ -183,7 +183,7 @@ See the [open issues](https://github.com/MatthewBlam/Dexcom-4-Desktop/issues) fo
 <!-- CONTRIBUTING -->
 ## Suggestions and Contributions
 
-If you have any suggestions or ideas, please open an issue with the tag "enhancement". All are **greatly appreciated**. You can also fork the repo and create a pull request. Thank you!
+If you have any suggestions or ideas, please open an issue with the tag "enhancement". All feedback is **greatly appreciated**. You can also fork the repo and create a pull request. Thank you!
 
 
 
