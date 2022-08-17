@@ -157,7 +157,7 @@ Pinning D4D to the taskbar makes launching the program incredibly easy. There ar
    8. Apply the changes, logout, and log back to see the changes
    9. Now you should see the Dexcom icon in your taskbar, and clicking it should run D4D!
 
-### Automatically start D4D when login for Windows
+### Automatically start D4D on login for Windows
 You can set D4D to automatically open every time you log in to your computer. Simply navigate to `C:\Users\[User Name]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup` and copy the D4D shortcut launcher over. That's it!
 
 <p align="right"><a href="#readme-top">back to top</a></p>
