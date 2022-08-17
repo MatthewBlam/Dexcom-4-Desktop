@@ -83,6 +83,8 @@ To get this project running locally, there are a few things you need to do...
 
 ### Setup
 
+Open the CLI of your choice and enter following...
+
 1. Make sure Python and Node.js are installed
    ```shell
    python -V  # may need to use 'python3' keyword
