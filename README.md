@@ -147,7 +147,7 @@ For a walk-through of how to use the program and it's features, please watch <a 
 
 ### Pinning D4D to taskbar on Windows
 Pinning D4D to the taskbar makes launching the program incredibly easy. There are some steps you must take as you can't pin the shortcut launcher, unfortunately.
-   1. Go into the `windows_run` folder in your project directory and lcoate `d4d.vbs`
+   1. Go into the `windows_run` folder in your project directory and locate `d4d.vbs`
    2. Rename `d4d.vbs` to `d4d.exe` and confirm when you are prompted
    3. Right-click `d4d.exe` and select 'Pin to taskbar'
    4. Rename `d4d.exe` back to `d4d.vbs` and confirm again
