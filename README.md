@@ -111,7 +111,7 @@ Now you can drag the shortcut to your desktop and easily launch D4D from there! 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-For a walk-through of how to use the program and it's features, please watch the video below.
+For a walk-through of how to use the program and it's features, please watch <a href="https://raw.githubusercontent.com/MatthewBlam/Dexcom-4-Desktop/main/images/Dexcom%204%20Desktop%20Showcase%20Compressed.mp4?token=GHSAT0AAAAAABXPLAXTMEG5ULWMK7I5YCUMYX4HRPQ">this video</a>.
 
 ### Features
 * Main Dexcom widget
