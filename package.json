@@ -1,0 +1,12 @@
+{
+  "name": "Dexcom4Desktop",
+  "version": "1.0.0",
+  "description": "Get glucose readings on your computer just how it looks on the Dexcom G6 app, via Dexcom Share API",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^7.3.3"
+  }
+}
