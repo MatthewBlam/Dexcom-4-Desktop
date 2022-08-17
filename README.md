@@ -15,6 +15,8 @@
     Display blood glucose readings on the computer with the same look as the original Dexcom G6 app!
     <br />
     <br />
+    <a href="[https://github.com/MatthewBlam/Dexcom-4-Desktop/issues](https://raw.githubusercontent.com/MatthewBlam/Dexcom-4-Desktop/main/images/Dexcom%204%20Desktop%20Showcase%20Compressed.mp4?token=GHSAT0AAAAAABXPLAXTMEG5ULWMK7I5YCUMYX4HRPQ)">View Demo</a>
+    ·
     <a href="https://github.com/MatthewBlam/Dexcom-4-Desktop/issues">Report Bug</a>
     ·
     <a href="https://github.com/MatthewBlam/Dexcom-4-Desktop/issues">Request Feature</a>
