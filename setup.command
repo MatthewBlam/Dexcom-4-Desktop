@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRIPTPATH = "$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )/setup.command"
+SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )/setup.command"
 
 cd ~/Desktop
 git clone https://github.com/MatthewBlam/Dexcom-4-Desktop.git
