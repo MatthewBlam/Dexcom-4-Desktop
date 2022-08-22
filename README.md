@@ -78,38 +78,33 @@ To get this project running locally, there are a few things you need to do...
 
 ### Prerequisites
 
+Download:
 * [Python &nbsp;&nbsp;&nbsp;≥3.6](https://www.python.org/downloads/)
 * [Node.js &nbsp;&nbsp;≥16.15](https://nodejs.org/en/download/)
 
 ### Setup
 
-Open the CLI of your choice and enter following...
+For both Windows and Mac, the instructions below will create a new folder on your Desktop containing the launcher shortcut that runs D4D. You can drag the shortcut to your desktop and easily launch D4D from there!
 
-1. Make sure Python and Node.js are installed
+#### Windows
+1. Download `setup.bat` from the repo, this is the only file you need
+2. Open Command Prompt, type `start `, and drag `setup.bat` into the window to paste the path
+3. Hit enter to run the command to install D4D and wait for it to finish, it should look something like:
    ```shell
-   python -V  # may need to use 'python3' keyword
-   npm -V
+   start C:\Users\USER\Desktop\setup.bat
    ```
-2. Download or clone the repo, then save the folder in an easy place
+4. You will know it is completed when `setup.bat` is deleted and a new folder containing D4D is on your Desktop
+5. See <a href="#pinning-d4d-to-taskbar-on-windows">more directions</a> on pinning D4D to taskbar or adding it to the start menu on Windows
+
+#### Mac
+1. Download `setup.command` from the repo, this is the only file you need
+2. Open Terminal, type `chmod +x `, and drag `setup.command` into the window to paste the path
+3. Hit enter to run the command, it should look something like:
    ```shell
-   git clone https://github.com/MatthewBlam/Dexcom-4-Desktop.git
+   chmod +x /Users/USER/Desktop/setup.command
    ```
-3. Install the necessary Python packages
-   ```shell
-   pip install eel pydexcom  # May need to use 'pip3' keyword
-   ```
-4. Install the necessary Node.js packages
-   ```python
-   cd path\to\project-folder  # Needs to be installed in the project folder
-   npm install electron  # Should create folder called 'node_modules'
-   ```
-5. Finally, run `windows_setup.py` or `mac_setup.py` to create the shortcut launcher `Dexcom 4 Desktop` in your project folder
-   ```shell
-   python windows_setup.py
-   # or
-   python mac_setup.py
-   ```
-Now you can drag the shortcut to your desktop and easily launch D4D from there! See <a href="#pinning-d4d-to-taskbar-on-windows">more directions</a> on pinning D4D to taskbar or adding it to the start menu.
+4. Now you can double click `setup.command` to run it and install D4D, make sure to wait for it to finish
+5. You will know it is completed when `setup.command` is deleted and a new folder containing D4D is on your Desktop
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
