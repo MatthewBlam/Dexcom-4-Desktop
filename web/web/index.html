@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="/eel.js"></script>
+    <script src="logic.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <title>Dexcom 4 Desktop</title>
+</head>
+
+<body>
+    <div id="bleft" class="border"></div>
+    <div id="bright" class="border"></div>
+    <div id="btop" class="border"></div>
+    <div id="bbottom" class="border"></div>
+
+    <div id="dexcom">
+        <div id="dexcom_body">
+            <svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 250 250">
+                <g>
+                    <path id="dexcom_back"
+                        d="M124.99987,0H245a5,5,0,0,1,5,5V125.00012A124.99988,124.99988,0,0,1,125.00012,250h-.00025A124.99988,124.99988,0,0,1,0,125.00013v-.00025A124.99987,124.99987,0,0,1,124.99987,0Z" />
+                    <circle id="filler_circle" cx="124.99125" cy="125.00526" r="124"
+                        style="stroke-miterlimit: 10;stroke-width: 4px" />
+                    <circle id="dexcom_circle" cx="124.99125" cy="125.00526" r="105"
+                        style="stroke-miterlimit: 10;stroke-width: 4px" />
+                    <path id="main_arrow" class="arrow"
+                        d="M334.55439,132.00526l31.87685,0a1.56,1.56,0,0,1,1.56,1.56l0,31.87685a1.56,1.56,0,0,1-2.6631,1.1031l-31.87685-31.87686A1.56,1.56,0,0,1,334.55439,132.00526Z"
+                        transform="translate(-125 -125)" />
+                    <path id="second_arrow" class="arrow"
+                        d="M317.33108,154.00526l27.323,0a1.33716,1.33716,0,0,1,1.33716,1.33715l0,27.323a1.33715,1.33715,0,0,1-2.28266.94551l-27.323-27.323A1.33716,1.33716,0,0,1,317.33108,154.00526Z"
+                        transform="translate(-125 -125)" />
+                </g>
+            </svg>
+        </div>
+        <div id="dexcom_text">
+            <div id="reading">--</div>
+            <div id="unit">mg/dL</div>
+        </div>
+    </div>
+
+    <div id="display_info">
+        <div class="di" id="di_name_txt">Name</div>
+        <div class="di" id="di_time_txt">Time</div>
+        <div class="di" id="di_delta_txt">Delta</div>
+    </div>
+
+
+    <div id="menu_wrapper">
+        <div class="menu_item" id="settings">
+            <svg ondragstart="return false;" draggable="false" id="settings_icon" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                </path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+        </div>
+
+        <div class="menu_item" id="move">
+            <svg ondragstart="return false;" draggable="false" id="move_icon" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4">
+                </path>
+            </svg>
+            <div id="move_icon_hitbox"></div>
+            <div id="move_detect"></div>
+        </div>
+
+        <div class="menu_item" id="zoom_in">
+            <svg ondragstart="return falses;" draggable="false" id="zoom_in_icon" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"></path>
+            </svg>
+        </div>
+
+        <div class="menu_item" id="zoom_out">
+            <svg ondragstart="return false;" draggable="false" id="zoom_out_icon" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM13 10H7"></path>
+            </svg>
+        </div>
+
+        <div id="menu" data-open="false">
+            <svg ondragstart="return false;" draggable="false" id="menu_icon" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+            </svg>
+            <svg ondragstart="return false;" draggable="false" id="close_icon" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </div>
+    </div>
+
+    <div id="full_hitbox"></div>
+
+
+
+    <div class="settings_container" id="settings_container">
+
+        <div class="fields" id="fields">
+
+            <div class="input_field">
+                <label class="field_label">Name</label>
+                <input type="text" id="name_input">
+            </div>
+
+            <div class="input_field">
+                <label class="field_label">Username</label>
+                <input type="text" id="username_input">
+            </div>
+
+            <div class="input_field">
+                <label class="field_label">Password</label>
+                <input type="text" id="password_input">
+            </div>
+
+            <div class="input_field check_field">
+                <label>Outside United States</label>
+                <div>
+                    <label class="check_label">
+                        <input type="checkbox" id="ous_yes">
+                        <span class="custom_check"></span>
+                        <span class="check_text">Yes</span>
+                    </label>
+                    <label class="check_label no">
+                        <input type="checkbox" id="ous_no">
+                        <span class="custom_check"></span>
+                        <span class="check_text">No</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="input_field check_field">
+                <label>Military Time</label>
+                <div>
+                    <label class="check_label">
+                        <input type="checkbox" id="military_yes">
+                        <span class="custom_check"></span>
+                        <span class="check_text">Yes</span>
+                    </label>
+                    <label class="check_label no">
+                        <input type="checkbox" id="military_no">
+                        <span class="custom_check"></span>
+                        <span class="check_text">No</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="input_field check_field">
+                <label>Unit</label>
+                <div>
+                    <label class="check_label">
+                        <input type="checkbox" id="unit_mg/dL">
+                        <span class="custom_check"></span>
+                        <span class="check_text">mg/dL</span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" id="unit_mmol/L">
+                        <span class="custom_check"></span>
+                        <span class="check_text">mmol/L</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="input_field check_field">
+                <label>Display Info</label>
+                <div>
+                    <label class="check_label">
+                        <input type="checkbox" id="di_yes">
+                        <span class="custom_check"></span>
+                        <span class="check_text">Yes</span>
+                    </label>
+                    <label class="check_label">
+                        <input type="checkbox" id="di_no">
+                        <span class="custom_check"></span>
+                        <span class="check_text">No</span>
+                    </label>
+                </div>
+            </div>
+
+            <div id="high_low_wrapper">
+                <div class="input_field hl">
+                    <label class="field_label">Low</label>
+                    <input type="number" id="low_input">
+                    <div class="spin_wrapper">
+                        <div id="low_display_txt" class="display_txt"></div>
+                        <div id="low_spin_minus" class="spin minus"> ◀ </div>
+                        <div id="low_spin_plus" class="spin plus"> ▶ </div>
+                    </div>
+                </div>
+
+                <div class="input_field hl">
+                    <label class="field_label">High</label>
+                    <input type="number" id="high_input">
+                    <div class="spin_wrapper">
+                        <div id="high_display_txt" class="display_txt"></div>
+                        <div id="high_spin_minus" class="spin minus"> ◀ </div>
+                        <div id="high_spin_plus" class="spin plus"> ▶ </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="save_btn">
+                <div id="save_txt">Save</div>
+                <svg id="save_check" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <svg id="save_err" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
