@@ -31,6 +31,7 @@ const createWindow = () => {
     transparent: true,
     resizable: false,
     show: false,
+    hasShadow: false,
   });
 
   // Set window to always on top
