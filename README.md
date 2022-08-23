@@ -91,7 +91,7 @@ For both Windows and Mac, the instructions below will create a new folder on you
    ```
    cd %USERPROFILE%\Desktop && curl -SLO https://raw.githubusercontent.com/MatthewBlam/Dexcom-4-Desktop/main/setup.bat && start %USERPROFILE%\Desktop\setup.bat
    ```
-2. You will know it is completed when a new folder called `Dexcom-4-Desktop` is created on your Desktop
+2. You will know it is completed when you see the message `DONE INSTALLING D4D`
 3. In the folder you can find the shortcut launcher used to run for D4D, called `Dexcom 4 Desktop`, with the dexcom logo as it's icon
 4. See <a href="#pinning-d4d-to-taskbar-on-windows">more directions</a> on pinning D4D to taskbar or adding it to the start menu on Windows
 
@@ -100,7 +100,7 @@ For both Windows and Mac, the instructions below will create a new folder on you
    ```
    cd ~/Desktop && curl -SLO https://raw.githubusercontent.com/MatthewBlam/Dexcom-4-Desktop/main/setup.command && chmod +x ~/Desktop/setup.command && ~/Desktop/setup.command
    ```
-2. You will know it is completed when a new folder called `Dexcom-4-Desktop` is created on your Desktop
+2. You will know it is completed when you see the message `DONE INSTALLING D4D`
 3. In the folder you can find the shortcut launcher used to run for D4D, called `Dexcom 4 Desktop`, with the dexcom logo as it's icon
 
 <p align="right"><a href="#readme-top">back to top</a></p>
