@@ -9,4 +9,5 @@ del setup.command
 python3 -V && python3 setup.py || python setup.py
 
 del setup.py
+echo 'DONE INSTALLING D4D'
 (goto) 2>nul & del "%~f0"
