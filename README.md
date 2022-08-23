@@ -78,7 +78,7 @@ To get this project running locally, there are a few things you need to do...
 
 ### Prerequisites
 
-Download:
+You _MUST_ Download Python and Node.js from the official websites in order to run D4D:
 * [Python &nbsp;&nbsp;&nbsp;≥3.6](https://www.python.org/downloads/)
 * [Node.js &nbsp;&nbsp;≥16.15](https://nodejs.org/en/download/)
 
