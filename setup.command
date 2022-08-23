@@ -13,4 +13,5 @@ rm setup.command
 python3 -V && python3 setup.py || python setup.py
 
 rm setup.py
+echo 'DONE INSTALLING D4D'
 rm $SCRIPTPATH
