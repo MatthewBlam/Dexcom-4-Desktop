@@ -102,6 +102,7 @@ For both Windows and Mac, the instructions below will create a new folder on you
    ```
 2. You will know it is completed when you see the message `DONE INSTALLING D4D`
 3. In the folder you can find the shortcut launcher used to run for D4D, called `Dexcom 4 Desktop`, with the dexcom logo as it's icon
+4. See <a href="#adding-d4d-to-dock-on-mac">more directions</a> on adding D4D to dock or adding it to login items on Mac
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
