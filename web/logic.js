@@ -499,8 +499,9 @@ function first_reading(name, reading, unit, status, trend, time, delta) {
   }
 
   if (trend == 'trend unavailable' || trend == 'unable to determine trend') {
-    dexcom_body.style.opacity = 0;
-  } else { dexcom_body.style.opacity = 1; }
+    dexcom_back.style.opacity = 0;
+    main_arrow.style.opacity = 0;
+  } else { dexcom_body.style.opacity = 1; main_arrow.style.opacity = 1; }
 
   dexcom_body.style.transform = "rotate(var(--" + trend.replace(/\s+/g, '-').toLowerCase() + "))";
   dexcom_back.style.opacity = 1;
@@ -545,8 +546,9 @@ function new_reading(name, reading, unit, status, trend, time, delta) {
   }
 
   if (trend == 'trend unavailable' || trend == 'unable to determine trend') {
-    dexcom_body.style.opacity = 0;
-  } else { dexcom_body.style.opacity = 1; }
+    dexcom_back.style.opacity = 0;
+    main_arrow.style.opacity = 0;
+  } else { dexcom_body.style.opacity = 1; main_arrow.style.opacity = 1; }
 
   dexcom_body.style.transform = "rotate(var(--" + trend.replace(/\s+/g, '-').toLowerCase() + "))";
   if (trend == "rising quickly" || trend == "falling quickly") {
