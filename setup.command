@@ -19,6 +19,7 @@ PTH="\$( cd -- \"\$(dirname \"\$0\")\" >/dev/null 2>&1 ; pwd -P )/d4d.command"
 
 touch d4d_startup.cmd
 echo '#!/bin/bash' > d4d_startup.cmd
+echo 'sleep 2s' >> d4d_startup.cmd
 echo $PTH >> d4d_startup.cmd
 chmod +x d4d_startup.cmd
 
