@@ -15,7 +15,7 @@ python3 -V && python3 setup.py || python setup.py
 rm setup.py
 cd mac_run
 
-PTH="~/Desktop/Dexcom-4-Desktop/d4d.command"
+PTH="~/Desktop/Dexcom-4-Desktop/mac_run/d4d.command"
 
 touch d4d_startup.cmd
 echo '#!/bin/bash' > d4d_startup.cmd
