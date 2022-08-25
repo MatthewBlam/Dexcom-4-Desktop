@@ -159,7 +159,10 @@ Adding D4D to Dock makes launching the program incredibly easy.
    6. Now you should see the Dexcom icon in the bottom right in your Dock, and clicking it should run D4D!
 
 ### Automatically start D4D on login for Windows
-You can set D4D to automatically open every time you log in to your computer. Simply navigate to `C:\Users\[User Name]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup` and copy the D4D shortcut launcher over. That's it!
+You can set D4D to automatically open every time you log in to your computer. Simply navigate to `C:\Users\[User Name]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup` and copy the D4D shortcut launcher over. That's it! Now D4D will run automatically whenever you login to your computer.
+
+### Automatically start D4D on login for Mac
+You can set D4D to automatically open every time you log in to your computer. Open System Preferences and search 'Login Items' in the searchbar. Once on this page, click the lock in the bottem left to make changes. Then locate the file `d4d_startup.command` in the `mac_run` folder of this project, and drag it into the Login Items window. You should see the file get added to the list. That's it! Now D4D will run automatically whenever you login to your computer.
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
