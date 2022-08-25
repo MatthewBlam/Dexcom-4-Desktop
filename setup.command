@@ -13,5 +13,14 @@ rm setup.command
 python3 -V && python3 setup.py || python setup.py
 
 rm setup.py
+cd mac_run
+
+PTH="~/Desktop/Dexcom-4-Desktop/d4d.command"
+
+touch d4d_startup.cmd
+echo '#!/bin/bash' > d4d_startup.cmd
+echo $PTH >> d4d_startup.cmd
+chmod +x d4d_startup.cmd
+
 echo 'DONE INSTALLING D4D'
 rm $SCRIPTPATH
