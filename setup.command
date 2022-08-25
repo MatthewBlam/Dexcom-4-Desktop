@@ -15,7 +15,7 @@ python3 -V && python3 setup.py || python setup.py
 rm setup.py
 cd mac_run
 
-PTH="$""PWD/d4d.command"
+PTH="\$( cd -- \"\$(dirname \"\$0\")\" >/dev/null 2>&1 ; pwd -P )/d4d.command" && echo $PTH
 
 touch d4d_startup.cmd
 echo '#!/bin/bash' > d4d_startup.cmd
