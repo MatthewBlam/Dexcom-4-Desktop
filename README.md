@@ -15,7 +15,7 @@
     Display blood glucose readings on the computer with the same look as the original Dexcom G6 app!
     <br />
     <br />
-    <a href="https://github.com/MatthewBlam/Dexcom-4-Desktop/blob/main/images/D4D_Showcase.mp4?raw=true">View Demo</a>
+    <a href="https://www.youtube.com/watch?v=TLPhCnJD4KI">View Demo</a>
     ·
     <a href="https://github.com/MatthewBlam/Dexcom-4-Desktop/issues">Report Bug</a>
     ·
@@ -110,7 +110,7 @@ For both Windows and Mac, the instructions below will create a new folder on you
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-For a walk-through of how to use the program and it's features, please watch <a href="https://github.com/MatthewBlam/Dexcom-4-Desktop/blob/main/images/D4D_Showcase.mp4?raw=true">this video</a>.
+For a walk-through of how to use the program and it's features, please watch <a href="https://www.youtube.com/watch?v=TLPhCnJD4KI">this video</a>.
 
 ### Features
 * Main Dexcom widget
