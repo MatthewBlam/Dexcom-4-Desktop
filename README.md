@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
-## This is an outdated project, please see:
-## https://github.com/MatthewBlam/Dexcom-Desktop-Application
+### This is an outdated project, please see:
+### https://github.com/MatthewBlam/Dexcom-Desktop-Application
 
 
 <br />
